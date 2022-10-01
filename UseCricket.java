@@ -21,11 +21,10 @@ public class UseCricket {
 		Map<Integer,Cricket> cc=c.values().stream().filter(x->x.getName().length()%2==0).collect(Collectors.toMap(x->x.getJersyNo(),x->x));
 		System.out.println(cc);
 		cc.forEach((x,y)->System.out.println(x+" "+y));
-		
-		
+		}
+		for(Integer cr : c.keySet()) {
+		System.out.println(cr);
+}
 
-		
-
-	}
 
 }
